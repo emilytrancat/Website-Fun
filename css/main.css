@@ -1,0 +1,281 @@
+/* Place CSS styles here */
+
+body {
+    /* distribute font to entire site */
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-weight: 400;
+    padding: 20px;
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  color: white;
+  text-align: left;
+}
+
+
+h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+
+span a {
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+p {
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+
+h1 
+h2,
+h3,
+h4,
+h5,
+h6 { 
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400; 
+  text-transform: uppercase; 
+
+}
+
+a:hover {
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  margin: 100px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.text p {
+  color: gainsboro;
+  font-size: 18px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.text h1 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+.val-header {
+  background-color: black;
+}
+
+.val-header nav {
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    gap: 80px;
+    padding: 30px;
+    font-size: 20px;
+    
+    }
+
+.buttons-on-header nav {
+  justify-content: right;
+  align-items: center;
+  display: flex;
+  gap: 80px;
+  padding: 30px;
+
+}
+
+
+.buttons-on-header nav a {
+  color: white;
+  align-items: center;
+  justify-content: top;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  background-color: black;
+}
+
+.val-header nav a {
+    color: white;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    background-color: black;
+}
+
+.val-header nav a img {
+   justify-content: top;
+}
+
+.val-header nav img {
+    justify-content: center;
+    width: 250px;
+}
+
+.Main-Contact {
+  padding: 30px;
+}
+
+.Contact-Tile a {
+color: white;
+align-content: center;
+display: block;
+}
+
+
+.Contact-Tiles {
+color: white;
+display: flex;
+justify-content: center;
+gap: 100px;
+ 
+}
+
+.Contact-Texts h1 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.Contact-Tile img {
+  width: 70px;
+  color: white;
+}
+
+.work-container {
+  display: grid;
+  align-items: left;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+
+.work-image {
+  max-width: 90%;
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+
+.work-text {
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  padding-right: 206px;
+  color: gainsboro;
+}
+
+ .grid {
+    max-width: 60 rem;
+    margin: 0 auto;
+    display: grid;
+    gap: 1em; 
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: masonry;
+  }
+
+  .featured {
+    grid-column: span 3;
+  }
+  
+  .grid > * {
+    break-inside: avoid;
+    margin-bottom: var(--gap);
+  }
+  
+  @supports (grid-template-rows: masonry) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(var(--columns), 1fr);
+      grid-template-rows: masonry;
+      grid-auto-flow: dense;
+      /* align-tracks: stretch; */
+    }
+  
+    .grid > * {
+      margin-bottom: 0em;
+    }
+  }
+  
+  
+  :root {
+    --ff-primary: basic-sans, sans-serif;
+    --clr-primary: #ee6352;
+    --clr-body: white;
+    --clr-bg: black;
+    --spacer: 1rem;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  .flow > * + * {
+    margin-top: var(--flow-space, var(--spacer));
+  }
+  
+  body {
+    font-family: var(--ff-primary);
+    min-height: 100vh;
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--clr-body);
+    background: var(--clr-bg);
+    padding-bottom: 13rem;
+  }
+  
+  a {
+    color: var(--clr-primary);
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .content {
+    padding: .1em;
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+  
+  }
+  
+  .title {
+    font-weight: 900;
+    color: var(--clr-primary);
+    line-height: 0.8;
+  }
+  
+  @media only screen and (max-width: 600px){
+    .content {
+      display: block;
+      flex-direction: column;
+    }
+  } 
+ 
