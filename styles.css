@@ -209,6 +209,8 @@ h3 {
   letter-spacing: .5px;
 }
 
-.card-title {
+.card-titles {
   text-align: center;
+  border: solid black 3px; 
+  border-radius: 10px;
 }
