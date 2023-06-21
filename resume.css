@@ -2,7 +2,16 @@ body {
     font-family: "Arial";
 }
 
-.main-images {
-border: solid 4px black;
-border-radius: 50%;
+.main-imagepoop {
+    border: solid black 4px;
+    border-radius: 50%;
+}
+
+h1 {
+    background-color: lightgrey;
+    padding: 5px;
+}
+
+.section-titlepoop {
+    text-transform: capitalize;
 }
